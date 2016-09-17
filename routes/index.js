@@ -4,7 +4,7 @@ var passport = require('passport');
 
 router.get('/', function (req, res, next) {
   res.render('index', {
-    title: 'Express',
+    title: 'Tindergram Vacation Planner',
     user: req.user,
   });
 });

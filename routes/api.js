@@ -42,7 +42,7 @@ router.get('/cities', function (req, res, next) {
       done();
       return res.status(500).send(err);
     }
-    client.query("SELECT city_name, currency, rating FROM tgvp.cities ORDER BY rating DESC;", function (err, result) {
+    client.query("SELECT city_name, currency, rating FROM tgvp.cities ORDER BY rating DESC LIMIT 10;", function (err, result) {
       done();
       if (err) return res.status(500).send(err);
       res.send(result.rows);

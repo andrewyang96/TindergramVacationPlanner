@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <% include partials/head %>
   </head>
   <body>
-    <h1><%= title %></h1>
+    <% include partials/navbar %>
     <% if (user) { %>
-    <p>Welcome, <%= user.displayName %></p>
-    <p>Your ID is <%= user.id %></p>
-    <a href="/logout">Logout</a>
+    <% include partials/mainarea %>
     <% } else { %>
-    <a href="/login">Please login</a>
+    <% include partials/splash %>
     <% } %>
   </body>
 </html>

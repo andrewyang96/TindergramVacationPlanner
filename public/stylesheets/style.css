@@ -1,8 +1,41 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-family: 'Oxygen', sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+.navbar-header h1 {
+	color: pink;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.navbar-nav li a {
+  line-height: 50px;
+  font-size: 20px;
+}
+
+.jumbotron {
+  margin: 32px;
+}
+
+.jumbotron button {
+  font-size: 24px;
+  padding: 12px;
+}
+
+#rankings {
+  padding-left: 20px;
+}
+
+#hotOrNot {
+  padding-right: 20px;
+}
+
+.choice:hover {
+  box-sizing: border-box;
+  border: 2px solid green;
 }
