@@ -4,9 +4,9 @@ INSERT INTO tgvp.cities VALUES ('Florence', 'EUR', 43.7696, 11.2558, 'florence.j
 INSERT INTO tgvp.cities VALUES ('Rome', 'EUR', 41.9028, 12.4964, 'rome.jpg');
 INSERT INTO tgvp.cities VALUES ('Barcelona', 'EUR', 41.3851, 2.1734, 'barcelona.jpg');
 INSERT INTO tgvp.cities VALUES ('Amsterdam', 'EUR', 52.3702, 4.8952, 'amsterdam.jpg');
-INSERT INTO tgvp.cities VALUES ('Prague', 'CZK', 50.0755, 14.4378);
-INSERT INTO tgvp.cities VALUES ('Budapest', 'HUF', 47.4979, 19.0402);
-INSERT INTO tgvp.cities VALUES ('Stockholm', 'SEK', 59.3293, 18.0686);
+INSERT INTO tgvp.cities VALUES ('Prague', 'CZK', 50.0755, 14.4378, 'prague.jpg');
+INSERT INTO tgvp.cities VALUES ('Budapest', 'HUF', 47.4979, 19.0402, 'budapest.jpg');
+INSERT INTO tgvp.cities VALUES ('Stockholm', 'SEK', 59.3293, 18.0686, 'stockholm.jpg');
 
 INSERT INTO tgvp.cities VALUES ('Tokyo', 'JPY', 35.6895, 139.6917, 'tokyo.jpg');
 INSERT INTO tgvp.cities VALUES ('Seoul', 'KRW', 37.5665, 126.9780, 'seoul.jpg');
