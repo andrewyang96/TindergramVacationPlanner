@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
+var apiRoutes = require('./routes/api');
 
 var app = express();
 
@@ -66,6 +67,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 console.log('Passport configured');
 app.use('/', routes);
+app.use('/api', apiRoutes);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
