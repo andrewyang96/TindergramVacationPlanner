@@ -16,11 +16,11 @@ router.get('*', function (req, res, next) {
   if (!req.user) res.status(401).send('You must login first');
   next();
 });
-/*
+
 router.post('*', function (req, res, next) {
   if (!req.user) res.status(401).send('You must login first!');
   next();
-});*/
+});
 
 router.get('/pair', function (req, res, next) {
   pg.connect(connectionString, function (err, client, done) {

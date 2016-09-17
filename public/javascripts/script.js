@@ -43,4 +43,22 @@ $(document).ready(function () {
       }
     });
   });
+
+  var loadRankings = function () {
+    $.ajax({
+      type: 'GET',
+      url: '/api/cities',
+      success: function (data) {
+        var ol = $('#rankings ol');
+        ol.empty();
+        $.each(data, function (index, obj) {
+          var item = $('<li>' + obj.city_name + ' -- ' + obj.rating + '</li>');
+          ol.append(item);
+        });
+      }
+    });
+  };
+
+  loadRankings();
+  setInterval(loadRankings, 2000);
 });
