@@ -44,7 +44,7 @@ $(document).ready(function () {
     });
   });
 
-  var loadRankings = function () {
+  var loadGlobalPreferences = function () {
     $.ajax({
       type: 'GET',
       url: '/api/cities',
@@ -59,6 +59,6 @@ $(document).ready(function () {
     });
   };
 
-  loadRankings();
-  setInterval(loadRankings, 2000);
+  loadGlobalPreferences();
+  setInterval(loadGlobalPreferences, 2000);
 });
