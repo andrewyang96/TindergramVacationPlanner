@@ -8,8 +8,10 @@ $(document).ready(function () {
       success: function (data) {
         $('#choice1').data('cityName', data[0].city_name);
         $('#choice1').attr('src', '/images/cities/' + data[0].placeholder_image);
+        $('#choice1').attr('alt', data[0].city_name);
         $('#choice2').data('cityName', data[1].city_name);
         $('#choice2').attr('src', '/images/cities/' + data[1].placeholder_image);
+        $('#choice2').attr('alt', data[1].city_name);
       }
     });
   };
