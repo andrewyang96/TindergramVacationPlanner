@@ -1,5 +1,5 @@
 # TindergramVacationPlanner
-A mashup of Tinder and Instagram with data from XE.com to help you plan your next vacation based on your pairwise preferences and currency exchange rate trends. A Hack the North 2016 project.
+A mashup of Tinder and Instagram powered by CockroachDB to help you plan your next vacation based on everyone's pairwise preferences. A Hack the North 2016 project.
 
 ## Setup From a Fresh Ubuntu Linode Image
 - `apt install git`
