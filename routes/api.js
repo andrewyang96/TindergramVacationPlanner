@@ -12,17 +12,8 @@ var rollback = function(client, done) {
 var K_VAL = 15;
 var elo = require('elo-rank')(K_VAL);
 
-router.get('*', function (req, res, next) {
-  if (!req.user) res.status(401).send('You must login first');
-  next();
-});
-
-router.post('*', function (req, res, next) {
-  if (!req.user) res.status(401).send('You must login first!');
-  next();
-});
-
 router.get('/pair', function (req, res, next) {
+  if (!req.user) return res.status(401).send('You must login first');
   pg.connect(connectionString, function (err, client, done) {
     if (err) {
       done();
@@ -37,6 +28,7 @@ router.get('/pair', function (req, res, next) {
 });
 
 router.get('/cities', function (req, res, next) {
+  if (!req.user) return res.status(401).send('You must login first');
   pg.connect(connectionString, function (err, client, done) {
     if (err) {
       done();
@@ -51,6 +43,7 @@ router.get('/cities', function (req, res, next) {
 });
 
 router.post('/rate', function (req, res, next) {
+  if (!req.user) return res.status(401).send('You must login first');
   if (!req.body.winner || !req.body.loser) return res.status(400).send('Winner or loser not defined');
   pg.connect(connectionString, function (err, client, done) {
     if (err) {
