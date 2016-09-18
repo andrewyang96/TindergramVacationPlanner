@@ -39,3 +39,9 @@ a {
   box-sizing: border-box;
   border: 2px solid green;
 }
+
+#notification {
+  text-align: center;
+  font-size: 32px;
+  margin-top: 12px;
+}

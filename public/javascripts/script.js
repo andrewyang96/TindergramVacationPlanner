@@ -36,9 +36,15 @@ $(document).ready(function () {
         loser: loser
       },
       success: function () {
+        $('#notification').addClass('text-success');
+        $('#notification').removeClass('text-danger');
+        $('#notification').html('Succesfully voted for ' + winner + '!');
         reloadImages();
       },
       error: function () {
+        $('#notification').addClass('text-danger');
+        $('#notification').removeClass('text-success');
+        $('#notification').html('Failed to record vote. Try again soon.');
         console.log('Failed to record vote');
       }
     });
